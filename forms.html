@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/htmlbasics.html" method="post">
+        <fieldset>
+            <legend><i><b>Regestration form</b></i> </legend>
+        <lable for="first name">first name:</lable>
+        <input type="text" id="first name"  name="first value" maxlength="7" placeholder="first name"  value="hh" required  readonly>
+        <br>
+        <br>
+        <lable for="last name">last name:</lable>
+        <input type="text" id="last name" value="enter your last name" name="last name"  disabled>
+        <br><br>
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" maxlength="8" placeholder="password" autofocus>
+        <br><br>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" maxlength="77" placeholder="email">
+        <br><br>
+        <label for="adress">adress:</label>
+        <textarea name="adress" id="adress" rows="10" cols="40">enter adress</textarea>
+        <br>
+        <br>
+        <label for="">select sports:</label><br>
+
+        <input type="checkbox" name="sports" id="volley" value="Volleyball">
+        <label for="volley">Volley ball</label>
+
+        <input type="checkbox" name="sports" id="cricket" value="cricket" checked>
+        <label for="cricket">Cricket </label> 
+
+        <input type="checkbox" name="sports" id="football" value="Football">
+        <label for="football">Football</label>
+
+        <br><br>
+        <label for="">choose course:</label>
+        <br>
+        <input type="radio" name="course" id="b.tech" value="b.tech" checked>
+        <label for="b.tech">b.tech</label>
+        <input type="radio" name="course" id="bca" value="bca">
+        <label for="bca">bca</label>
+
+        <br><br>
+ 
+        <label for="">choose state </label><br>
+        <select name="state" id="state" size="7" multiple>
+            <option value="punjab">punjab</option>
+            <option value="delhi" selected >delhi</option>
+            <option value="haryana" >haryana</option>
+        </select>
+
+        <br><br>
+        <label for="upload"></label>
+        <input type="file" name="upload " id="upload">
+        <label for="upload1"></label>
+        <br><br>
+        <input type="file" name="uplaoad" id="upload1" accept="image/*">
+        <br><br>
+        <input type="button" value="ok">
+
+        <br><br>
+
+        <label for="marks">enter number:</label>
+        <input type="number" id="marks" name="marks" min="3" max="30" step="5">
+
+        <br><br>
+
+        <input type="date" >
+        <br>
+        <input type="time">
+
+        <br><br>
+        <input type="range" value="0" min="0" max="100" step="5">
+        <br><br>
+        
+        <progress max="100" min="0" value="78"></progress>
+
+
+         <br><br>
+        <input type="submit" name="submit" id="submit">
+
+       
+
+        <input type="reset" name="reset" id="reset">
+    <p>ther is dev with dev<sup>me</sup>% </p>
+    <p>My favorite book is <cite>The Great Gatsby</cite> by F. Scott Fitzgerald.</p>
+
+
+
+
+
+
+        
+    </fieldset>
+    </form>
+    
+</body>
+</html>

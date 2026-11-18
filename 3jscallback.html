@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">this is heading</h1>
+    <p class="p1">para1</p>
+    <p class="p1">para2</p>
+    <p class="p1">parq3</p>
+    
+    
+    <script>
+        let h1 = document.getElementById("head1")
+        console.log(h1.textContent)
+        h1.onclick = function (){
+            alert("dawg")
+        }
+
+        let para = document.getElementsByClassName("p1");
+        console.log(para.length);
+
+        let paras = document.getElementsByTagName("p");
+        console.log(paras.length);
+
+
+
+    </script>
+    
+</body>
+</html>

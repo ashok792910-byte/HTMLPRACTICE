@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // arithematic operators
+        let x=90;
+        let y=100;
+        console.log(x+y,x-y,x*y,x/y,x%y);
+
+        // post incremenent and pre increment
+
+
+        let a=30;
+        console.log(a++);
+        console.log(a);
+        console.log(--a);
+        console.log(++a)
+        console.log(a)
+
+        // assignment operators
+        let x1=10;
+        let y1=20;
+        console.log(x1+=y1,x1-=y1,x1*=y1)
+
+
+        // comparison operation 
+
+
+        // === is for equal,and same data type return true 
+
+        let x2=100;
+        let y2=166;
+
+        console.log(x2==y2)
+
+        // logical operator 
+
+        console.log((x2 && y2) && (x1||y1), ! x)
+
+
+        // branching statements
+
+        var marks=88;
+       if (marks>=90){
+        console.log("elite batch")
+
+       }
+       else if (marks>=75){
+        console.log("intermeditate")
+       }
+       else if (marks>=60){
+        console.log("repeate batch")
+       }
+       else{
+        console.log("Fail")
+       }
+
+       // looping statements
+
+       for( let i =0; i<=15; i++ ){
+        console.log(i)
+       }
+       let j=5;
+       while(j<=10){
+        console.log(j);
+        j++
+       }
+
+       let i = 1;
+
+do {
+  console.log("Iteration number: " + i);
+  i++; // Increment is required to prevent an infinite loop
+} while (i <= 5);
+
+let str1 = "   hello ,   there   "
+
+console.log(str1.includes("q"))
+console.log(str1.slice(2,5))
+console.log(str1.trim())
+console.log(str1.trim().length)
+console.log(str1.replace("h","T"))
+console.log(str1.charAt(5))
+console.log(str1.indexOf("v"))
+
+
+
+// Array method 
+
+let array1 = ["1","2","3","4","5"]
+
+array1.push("jj")  // add element at last 
+
+console.log(array1)
+
+array1.unshift("00");  // add element in beginning 
+
+console.log(array1)
+
+array1.pop();   // remove last element 
+
+console.log(array1)
+
+array1.shift();   // remove first element  
+
+console.log(array1)
+
+console.log(array1.slice(1,3))  // 2,3
+
+array1.splice(0,1,"replaced");  // (element from where to start delecting ,how much to delet,if someting writeen here then the thing will be repalced)
+
+console.log(array1);
+
+array1.splice(4,1,"secound");
+console.log(array1)
+
+// objects 
+
+let student = {
+    rollno:1 ,
+    name:"piyush" ,
+    state:"rajastha" ,
+}
+
+console.log(student)
+
+console.log(student.name,student.rollno,student["state"]);
+
+// cretate multiple object with constructor fucction 
+
+  function Book(publisher,name){
+    this.publisher1=publisher;
+    this.name=name;
+  }
+
+  let b1= new Book("Pearson","Web")
+  console.log(b1.publisher1);
+  let b2= new Book ("bappi","jj")
+  console.log(b2.name);
+
+  // error handling 
+
+  let mark= 60;
+
+  try{
+    if (mark<0 || mark> 100){
+        throw new Error("invalid input") 
+    }
+    console.log(mark)
+  }
+  catch(ccc){
+    console.log(ccc.message);
+  }
+  finally{
+    console.log("tnku")
+  }
+
+
+    </script>
+</body>
+</html>

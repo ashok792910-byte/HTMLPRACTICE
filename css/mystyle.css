@@ -1,0 +1,16 @@
+
+
+ footer{
+    background-color: darkorange;
+ }
+
+#div {
+  background-color: aqua;
+  border: 2px solid blueviolet;
+  width: 100px; ;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow:10px 10px 10px 5px  ;
+ }
+ 
